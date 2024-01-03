@@ -21,5 +21,12 @@ alias grsquash='git rebase -i --autosquash'
 alias brake='bundle exec rake'
 alias bundlex='bundle exec'
 alias gr='grep --color -r'
-alias fpid='lsof -wni'
 alias style='dev style --include-branch-commits'
+
+function theme_with_blocks() {
+  bin/rake online_store_editor:theme:with_theme_blocks
+}
+
+function delete_port_in_use() {
+  lsof -wni tcp:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
+}
