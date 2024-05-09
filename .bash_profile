@@ -27,6 +27,18 @@ function theme_with_blocks() {
   bin/rake online_store_editor:theme:with_theme_blocks
 }
 
+function theme_with_static_blocks() {
+  bin/rake online_store_editor:theme:with_static_blocks
+}
+
+function install_app_blocks() {
+  bin/rake online_store:theme_app_extensions:create_before_install
+}
+
+function update_app_blocks() {
+  bin/rake online_store:theme_app_extensions:create_after_install
+}
+
 function delete_port_in_use() {
   lsof -wni tcp:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
 }
