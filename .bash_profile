@@ -31,6 +31,10 @@ function theme_with_static_blocks() {
   bin/rake online_store_editor:theme:with_static_blocks
 }
 
+function with_horizon() {
+  bin/rake online_store_editor:theme:with_horizon
+}
+
 function theme_with_styles() {
   bin/rake online_store_editor:theme:with_styles
 }
