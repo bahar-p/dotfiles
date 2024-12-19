@@ -50,5 +50,3 @@ function update_app_blocks() {
 function kill_port() {
   lsof -wni tcp:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
 }
-
-export BUILDKITE_TOKEN="$(cat /etc/spin/secrets/buildkite)"
