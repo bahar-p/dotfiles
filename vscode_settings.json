@@ -1,0 +1,26 @@
+{
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.trimTrailingWhitespace": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "terminal.integrated.scrollback": 3000,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "remote.SSH.connectTimeout": 150,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "githubPullRequests.pullBranch": "never",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "@azure.argTenant": ""
+}
